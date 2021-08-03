@@ -1,9 +1,24 @@
 {
     "name": "slackify",
-    "version": "0.0.0",
-    "main": "index.ts",
-    "license": "MIT",
+    "description": "Slack bot Node.js custom SDK",
     "author": "Adrian Pothuaud <adrianpothuaud+github@gmail.com> (https://github.com/AP-ero)",
+    "license": "MIT",
+    "keywords": [
+        "Slack",
+        "Node.js",
+        "Typescript",
+        "Notifications"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AP-ero/slackify.git"
+    },
+    "homepage": "https://github.com/AP-ero/slackify",
+    "bugs": {
+        "url": "https://github.com/AP-ero/slackify/issues"
+    },
+    "version": "0.0.0",
+    "main": "build/src/lib/index.js",
     "scripts": {
         "lint": "eslint src/** --fix",
         "prepare": "husky install",
