@@ -17,14 +17,14 @@
   "bugs": {
     "url": "https://github.com/AP-ero/slackify/issues"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "build/src/lib/index.js",
   "scripts": {
     "build": "tsc",
-    "changelog": "auto-changelog -p && git add CHANGELOG.md",
     "lint": "eslint src/** --fix",
     "prepare": "husky install",
-    "test": "jest"
+    "test": "jest",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
