@@ -1,46 +1,47 @@
 {
-    "name": "slackify",
-    "description": "Slack bot Node.js custom SDK",
-    "author": "Adrian Pothuaud <adrianpothuaud+github@gmail.com> (https://github.com/AP-ero)",
-    "license": "MIT",
-    "keywords": [
-        "Slack",
-        "Node.js",
-        "Typescript",
-        "Notifications"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/AP-ero/slackify.git"
-    },
-    "homepage": "https://github.com/AP-ero/slackify",
-    "bugs": {
-        "url": "https://github.com/AP-ero/slackify/issues"
-    },
-    "version": "0.0.1",
-    "main": "build/src/lib/index.js",
-    "scripts": {
-        "build": "tsc",
-        "lint": "eslint src/** --fix",
-        "prepare": "husky install",
-        "test": "jest",
-        "version": "auto-changelog -p && git add CHANGELOG.md"
-    },
-    "devDependencies": {
-        "@commitlint/cli": "^13.1.0",
-        "@commitlint/config-conventional": "^13.1.0",
-        "@types/jest": "^26.0.24",
-        "@types/node": "^16.4.10",
-        "@typescript-eslint/eslint-plugin": "^4.29.0",
-        "@typescript-eslint/parser": "^4.29.0",
-        "auto-changelog": "^2.3.0",
-        "codecov": "^3.8.3",
-        "eslint": "^7.32.0",
-        "eslint-plugin-jest": "^24.4.0",
-        "husky": "^7.0.1",
-        "jest": "^27.0.6",
-        "ts-jest": "^27.0.4",
-        "ts-node": "^10.1.0",
-        "typescript": "^4.3.5"
-    }
+  "name": "slackify",
+  "description": "Slack bot Node.js custom SDK",
+  "author": "Adrian Pothuaud <adrianpothuaud+github@gmail.com> (https://github.com/AP-ero)",
+  "license": "MIT",
+  "keywords": [
+    "Slack",
+    "Node.js",
+    "Typescript",
+    "Notifications"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AP-ero/slackify.git"
+  },
+  "homepage": "https://github.com/AP-ero/slackify",
+  "bugs": {
+    "url": "https://github.com/AP-ero/slackify/issues"
+  },
+  "version": "0.0.2",
+  "main": "build/src/lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src/** --fix",
+    "prepare": "husky install",
+    "test": "jest",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.10",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "auto-changelog": "^2.3.0",
+    "codecov": "^3.8.3",
+    "eslint": "^7.32.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "patch-version": "^0.1.1",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  }
 }
