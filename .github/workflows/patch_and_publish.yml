@@ -1,5 +1,8 @@
-name: Validate Push
-on: [push]
+name: Validate Master Merge
+on:
+  push:
+    branches:
+      - master
 jobs:
   Install-Build-Test-Report:
     runs-on: ubuntu-latest
@@ -14,12 +17,12 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - name: Install dependencies
-        run: yarn install
+      - name: Patch version
+        run: yarn version --patch
       - name: Build Typescript
         run: yarn build
-      - name: Run tests
-        run: yarn test
+      - name: Deploy NPM Package
+        run: yarn publish
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
