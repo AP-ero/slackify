@@ -122,3 +122,5 @@ dist
 .idea/*
 .idea/**
 .vscode
+
+package-lock.json
