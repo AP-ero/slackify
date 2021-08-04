@@ -21,10 +21,10 @@
   "main": "build/src/lib/index.js",
   "scripts": {
     "build": "tsc",
+    "changelog": "auto-changelog -p && git add CHANGELOG.md",
     "lint": "eslint src/** --fix",
     "prepare": "husky install",
-    "test": "jest",
-    "version": "auto-changelog -p && git add CHANGELOG.md"
+    "test": "jest"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
